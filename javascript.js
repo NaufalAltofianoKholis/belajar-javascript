@@ -67,3 +67,25 @@
            let namasaya = document.getElementById('input').value;
            document.getElementById('nama2').innerHTML=namasaya ;
         }
+
+        let btn=document.getElementById('jam');
+
+        btn.onclick=function(){
+         document.getElementById('waktu').innerHTML=Date();
+        }
+
+        let isi=document.getElementById('ketik');
+        let tampil=document.getElementById('waktu')
+        isi.onmouseover=function(){
+            tampil.innerHTML=isi.value;
+        }
+
+        let hari=document.getElementById('hari');
+        hari.addEventListener("mouseover",coba);
+
+        function coba(){
+         alert("coba coba");
+        }
+
+        let rasi=document.getElementById('zodi');
+        rasi.addEventListener("click",zodiak);
